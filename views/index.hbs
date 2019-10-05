@@ -363,7 +363,7 @@
     <script>
         $(document).ready(function () {
             //tampilkan data ke modal untuk edit
-            $('#mytable').on('click', '.edit', function () {
+            $('#example').on('click', '.edit', function () {
                 var id_barang = $(this).data('id_barang');
                 var nama_barang = $(this).data('nama_barang');
                 var kode_barang = $(this).data('kode_barang');
@@ -375,7 +375,7 @@
                 $('.id_barang').val(id_barang);
             });
             //tampilkan modal hapus record
-            $('#mytable').on('click', '.delete', function () {
+            $('#example').on('click', '.delete', function () {
                 var id_barang = $(this).data('id_barang');
                 $('#DeleteModal').modal('show');
                 $('.product_id2').val(id_barang);
